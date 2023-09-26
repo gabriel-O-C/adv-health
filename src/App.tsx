@@ -1,5 +1,5 @@
-import Calendar from "react-calendar";
-import "react-calendar/dist/Calendar.css";
+
+import { CalendarComponent as Calendar } from "./components/Calendar";
 import { Dashboard } from "./components/Dashboard";
 import { Menu } from "./components/Menu";
 import { Reminder } from "./components/Reminder";
@@ -42,10 +42,7 @@ function App() {
         </section>
 
         <section className="ml-8 mt-28">
-          {/* TODO componentize */}
-          <div className="px-4 w-full flex items-center justify-center first:w-full">
-            <Calendar className={"w-[80%]"}  />
-          </div>
+          <Calendar />
         </section>
       </div>
     </main>
