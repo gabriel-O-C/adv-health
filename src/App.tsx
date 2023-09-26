@@ -39,7 +39,7 @@ function App() {
           </div>
         </section>
 
-        <div className="ml-8 min-w-[50vw]">calendário placeholder</div>
+        <div className="ml-8 w-[45vw]">calendário placeholder</div>
       </div>
     </main>
   );
