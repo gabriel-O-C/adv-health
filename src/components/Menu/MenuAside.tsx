@@ -7,7 +7,7 @@ function MenuAside({ isOpen, toggle }: Props) {
     <aside
       className={
         isOpen
-          ? `h-screen z-10 bg-slate-300  fixed w-24`
+          ? `h-screen z-10 bg-slate-300 fixed w-24`
           : "hidden"
       }
       role="menu"
