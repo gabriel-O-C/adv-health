@@ -1,9 +1,6 @@
-import { ReactNode } from "react";
+import { Children } from "../../types/children";
 
-interface Props {
-  children: ReactNode;
-}
-function MenuRoot({ children }: Props) {
+function MenuRoot({ children }: Children) {
   return <header className="flex flex-col">{children}</header>;
 }
 
