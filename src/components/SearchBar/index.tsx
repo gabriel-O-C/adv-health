@@ -13,7 +13,7 @@ export function SearchBar() {
         <img
           src={searchIcon}
           alt="ícone de busca"
-          className=" cursor-pointer w-6 h-6 absolute right-1 top-1"
+          className="cursor-pointer w-6 h-6 absolute right-1 top-1"
         />
       </fieldset>
     </form>
