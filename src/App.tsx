@@ -1,5 +1,7 @@
 function App() {
-  return <h1>Initial setup</h1>;
+  return (
+    <button type="button" className="btn btn-primary">Bootstrap</button>
+  );
 }
 
 export default App;
