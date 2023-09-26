@@ -7,8 +7,8 @@ function MenuNav() {
         </a>
       </div>
       <div>
-        <img src="" alt="foto do médico" />
-        <span>Nome do médico</span>
+        <img src="" alt="user photo" className="w-20 rounded-full bg-gray-300 aspect-square" />
+        <span>User</span>
       </div>
     </nav>
   );
