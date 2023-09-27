@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@hookform/resolvers':
+    specifier: ^3.3.1
+    version: 3.3.1(react-hook-form@7.46.2)
   '@popperjs/core':
     specifier: ^2.11.8
     version: 2.11.8
@@ -544,6 +547,14 @@ packages:
     resolution: {integrity: sha512-Ag+9YM4ocKQx9AarydN0KY2j0ErMHNIocPDrVo8zAE44xLTjEtz81OdR68/cydGtk6m6jDb5Za3r2useMzYmSw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@hookform/resolvers@3.3.1(react-hook-form@7.46.2):
+    resolution: {integrity: sha512-K7KCKRKjymxIB90nHDQ7b9nli474ru99ZbqxiqDAWYsYhOsU3/4qLxW91y+1n04ic13ajjZ66L3aXbNef8PELQ==}
+    peerDependencies:
+      react-hook-form: ^7.0.0
+    dependencies:
+      react-hook-form: 7.46.2(react@18.2.0)
+    dev: false
 
   /@humanwhocodes/config-array@0.11.11:
     resolution: {integrity: sha512-N2brEuAadi0CcdeMXUkhbZB84eskAc8MEX1By6qEchoVywSgXPIjou4rYsl0V3Hj0ZnuGycGCjdNgockbzeWNA==}

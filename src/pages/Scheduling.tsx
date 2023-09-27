@@ -1,14 +1,11 @@
 import { useState } from "react";
 import { AppointmentCard } from "../components/AppointmentCard";
+import { AppointmentForm } from "../components/AppointmentForm/AppointmentForm";
 import { CalendarComponent as Calendar } from "../components/Calendar";
-import { Modal } from "../components/Modal/Modal";
 
 export default function Scheduling() {
-  const [isModalVisible, setIsModalVisible] = useState(true)
+  const [isModalVisible, setIsModalVisible] = useState(true);
 
-  function handleCloseModal() {
-   setIsModalVisible(false)
-  }
   return (
     <section className="grid grid-cols-2">
       <div className="max-w-[50vw] flex flex-col items-start justify-center gap-4">
@@ -109,9 +106,11 @@ export default function Scheduling() {
           </div>
         </AppointmentCard.Root>
       </div>
-      <Modal title="Agendar consulta" visible={isModalVisible} onCancel={handleCloseModal} onConfirm={handleCloseModal} >
-        minhas coisas 
-      </Modal>
+
+      <AppointmentForm
+        isModalVisible={isModalVisible}
+        setIsModalVisible={setIsModalVisible}
+      />
     </section>
   );
 }

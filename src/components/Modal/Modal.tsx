@@ -24,13 +24,13 @@ export function Modal({
   }
   return ReactDOM.createPortal(
     <div className="bg-black_rgba backdrop-blur fixed top-0 left-0 w-full h-full flex items-center justify-center flex-col">
-      <h1 className="text-2xl">{title}</h1>
-      <div className="flex flex-col gap-2">{children}</div>
-      <div className="flex gap-2">
-        <button className="btn btn-primary" onClick={onConfirm}>
+      <h1 className="text-2xl text-white">{title}</h1>
+      <div className="flex flex-col gap-2 w-8/12">{children}</div>
+      <div className="flex gap-2 w-8/12 justify-center items-center mt-4">
+        <button className="btn btn-primary w-full" onClick={onConfirm}>
           {confirmLabel ? confirmLabel : "Agendar"}
         </button>
-        <button className="btn btn-danger" onClick={onCancel}>
+        <button className="btn btn-danger w-full" onClick={onCancel}>
           {cancelLabel ? cancelLabel : "Cancelar"}
         </button>
       </div>
