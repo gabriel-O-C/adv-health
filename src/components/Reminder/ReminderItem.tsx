@@ -2,7 +2,7 @@ export function ReminderItem() {
   return (
     <tr>
       <td>
-        <input type="checkbox" />
+        <input type="checkbox" name="checkbox" />
       </td>
       <td>Coluna 2</td>
       <td>Coluna 3</td>

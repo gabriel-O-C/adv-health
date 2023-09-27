@@ -1,7 +1,7 @@
 import searchIcon from "../../assets/search.svg";
 export function SearchBar() {
   return (
-    <form className="mb-4">
+    <form className="mb-4" >
       <fieldset className="flex flex-col relative">
         <input
           type="text"
@@ -9,6 +9,7 @@ export function SearchBar() {
           className="bg-slate-200 rounded p-1"
           id="search"
           role="search"
+          name="search"
         />
         <img
           src={searchIcon}

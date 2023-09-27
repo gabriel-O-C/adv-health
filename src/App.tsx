@@ -33,7 +33,7 @@ function App() {
           </div>
         )}
       </Menu.Root>
-      <div className="grid grid-cols-2 w-screen ml-[100px] mt-24 p-4">
+      <div className="grid grid-cols-2 w-screen ml-[100px] mt-48 p-4">
         <section className="min-w-[50vw]">
           <SearchBar />
           <div>
