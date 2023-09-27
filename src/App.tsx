@@ -29,7 +29,7 @@ function App() {
           </div>
         )}
       </Menu.Root>
-      <main className="grid place-items-center w-screen h-screen">
+      <main className="ml-[100px] mt-48">
         <AppRoutes />
       </main>
     </BrowserRouter>

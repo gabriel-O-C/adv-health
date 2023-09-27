@@ -8,7 +8,7 @@ export default function Home() {
   const reminderItems = [1, 2, 3, 4, 5, 6, 7];
 
   return (
-    <div className="grid grid-cols-2 w-screen ml-[100px] mt-48 p-4">
+    <div className="grid grid-cols-2 w-screen  p-4">
     <section className="min-w-[50vw]">
       <SearchBar />
       <div>

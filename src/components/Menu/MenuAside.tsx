@@ -1,17 +1,13 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from "react-router-dom";
 interface Props {
   isOpen: boolean;
   toggle: () => void;
 }
 function MenuAside({ isOpen, toggle }: Props) {
-  const location = useLocation()
+  const location = useLocation();
   return (
     <aside
-      className={
-        isOpen
-          ? `h-screen z-10 bg-slate-300 fixed w-24`
-          : "hidden"
-      }
+      className={isOpen ? `h-screen z-10 bg-slate-300 fixed w-24` : "hidden"}
       role="menu"
     >
       <div
@@ -31,9 +27,25 @@ function MenuAside({ isOpen, toggle }: Props) {
       </div>
 
       <div className="gap-4 flex flex-col w-full items-center [&>*]:aspect-square [&>*]:w-10 [&>*]:cursor-pointer">
-        <Link to={"/"} title="Home" className={location.pathname == '/' ? 'bg-gray-100' : 'bg-gray-500'} />
-        <Link to={"/consulta"} title="Home" className={location.pathname == '/consulta' ? 'bg-gray-100' : 'bg-gray-500'} />
-        <Link to={"/agendamentos"} title="Home" className={location.pathname == '/agendamentos' ? 'bg-gray-100' : 'bg-gray-500'} />
+        <Link
+          to={"/"}
+          title="Home"
+          className={location.pathname == "/" ? "bg-gray-100" : "bg-gray-500"}
+        />
+        <Link
+          to={"/agendamento"}
+          title="Home"
+          className={
+            location.pathname == "/agendamento" ? "bg-gray-100" : "bg-gray-500"
+          }
+        />
+        <Link
+          to={"/consulta"}
+          title="Home"
+          className={
+            location.pathname == "/consulta" ? "bg-gray-100" : "bg-gray-500"
+          }
+        />
       </div>
     </aside>
   );
