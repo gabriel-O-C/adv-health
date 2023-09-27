@@ -1,8 +1,10 @@
+import { Link, useLocation } from 'react-router-dom';
 interface Props {
   isOpen: boolean;
   toggle: () => void;
 }
 function MenuAside({ isOpen, toggle }: Props) {
+  const location = useLocation()
   return (
     <aside
       className={
@@ -28,10 +30,10 @@ function MenuAside({ isOpen, toggle }: Props) {
         </svg>
       </div>
 
-      <div className="gap-4 flex flex-col w-full items-center [&>*]:aspect-square [&>*]:w-10 [&>*]:bg-gray-500 [&>*]:cursor-pointer">
-        <div></div>
-        <div></div>
-        <div></div>
+      <div className="gap-4 flex flex-col w-full items-center [&>*]:aspect-square [&>*]:w-10 [&>*]:cursor-pointer">
+        <Link to={"/"} title="Home" className={location.pathname == '/' ? 'bg-gray-100' : 'bg-gray-500'} />
+        <Link to={"/consulta"} title="Home" className={location.pathname == '/consulta' ? 'bg-gray-100' : 'bg-gray-500'} />
+        <Link to={"/agendamentos"} title="Home" className={location.pathname == '/agendamentos' ? 'bg-gray-100' : 'bg-gray-500'} />
       </div>
     </aside>
   );
