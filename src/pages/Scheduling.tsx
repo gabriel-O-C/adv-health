@@ -60,7 +60,7 @@ export default function Scheduling() {
             <AppointmentCard.Item title="Nome:" name="Jane Doe" />
           </div>
           <div className="flex gap-2 justify-end flex-1">
-            <AppointmentCard.Action onClick={() => console.log("clicou")}>
+            <AppointmentCard.Action onClick={() => setIsModalVisible((prevState) => !prevState)}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

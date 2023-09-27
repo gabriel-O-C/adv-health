@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Menu } from "./components/Menu";
+import ToastContainer from "./components/Toast/ToastRoot";
 import AppRoutes from "./routes/AppRoutes";
 function App() {
   const [isSideBarOpen, setIsSideBarOpen] = useState(true);
@@ -29,6 +30,7 @@ function App() {
           </div>
         )}
       </Menu.Root>
+      <ToastContainer />
       <main className="ml-[100px] mt-48">
         <AppRoutes />
       </main>

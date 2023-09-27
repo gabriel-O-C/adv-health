@@ -1,6 +1,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import toast from "../../utils/toast";
 import { Modal } from "../Modal/Modal";
 
 const appointmentSchema = z.object({
@@ -39,6 +40,10 @@ export function AppointmentForm({ isModalVisible, setIsModalVisible }: Props) {
   }
   function onSubmit(data: AppointmentData) {
     console.log(data);
+    toast({
+      text: "consulta marcada com sucesso!",
+      type: "success"
+    })
     handleCloseModal();
   }
   return (
