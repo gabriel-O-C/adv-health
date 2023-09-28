@@ -3,6 +3,7 @@ import { CalendarComponent as Calendar } from "../components/Calendar";
 import { Dashboard } from "../components/Dashboard";
 import { Reminder } from "../components/Reminder";
 import { SearchBar } from "../components/SearchBar";
+import appointments from '../data/scheduled.json';
 
 export default function Home() {
   const reminderItems = [1, 2, 3, 4, 5, 6, 7];
@@ -40,51 +41,23 @@ export default function Home() {
       <section className="ml-8 mt-28">
         <Calendar />
         <div className="ml-8 lg:ml-[85px] xl:ml-20 2xl:ml-28 3xl:ml-36">
-          <AppointmentCard.Root>
+          {appointments.map((appointment) => (
+            <AppointmentCard.Root key={appointment.id}>
             <AppointmentCard.Profile
               image={
                 "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
               }
             />
             <div className="flex flex-col">
-              <AppointmentCard.Item title="Nome do paciente:" name="John Doe" />
-              <AppointmentCard.Item title="CPF:" name="859.029.910-48" />
+              <AppointmentCard.Item title="Nome do paciente:" name={appointment.name} />
+              <AppointmentCard.Item title="CPF:" name={appointment.cpf} />
               <AppointmentCard.Item
                 title="Médico responsável:"
-                name="Jane Doe"
+                name={appointment.doctor_name}
               />
             </div>
           </AppointmentCard.Root>
-          <AppointmentCard.Root>
-            <AppointmentCard.Profile
-              image={
-                "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
-              }
-            />
-            <div className="flex flex-col">
-              <AppointmentCard.Item title="Nome do paciente:" name="John Doe" />
-              <AppointmentCard.Item title="CPF:" name="859.029.910-48" />
-              <AppointmentCard.Item
-                title="Médico responsável:"
-                name="Jane Doe"
-              />
-            </div>
-          </AppointmentCard.Root>
-          <AppointmentCard.Root>
-            <AppointmentCard.Profile
-              image={
-                "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
-              }
-            />
-            <div className="flex flex-col">
-              <AppointmentCard.Item title="Nome do paciente:" name="John Doe" />
-              <AppointmentCard.Item title="CPF:" name="859.029.910-48" />
-              <AppointmentCard.Item
-                title="Médico responsável:"
-                name="Jane Doe"
-              />
-            </div>
-          </AppointmentCard.Root>
+          ))}
         </div>
       </section>
     </div>

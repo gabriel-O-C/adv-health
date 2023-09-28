@@ -11,7 +11,7 @@
   },
   {
     "name": "Jane doe1",
-    "doctor_name": "john doe",
+    "doctor_name": "john doe1",
     "scheduled_time": "08:00",
     "amount": 200,
     "cpf": "790.985.610-55",
@@ -21,7 +21,7 @@
   },
   {
     "name": "Jane doe2",
-    "doctor_name": "john doe",
+    "doctor_name": "john doe2",
     "scheduled_time": "08:00",
     "amount": 95,
     "cpf": "790.985.610-55",
