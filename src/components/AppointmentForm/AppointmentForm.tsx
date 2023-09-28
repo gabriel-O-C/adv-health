@@ -89,6 +89,7 @@ export function AppointmentForm({ isModalVisible, setIsModalVisible }: Props) {
           <input
             type="date"
             id="birthdate"
+            required
             {...register("birthdate", { valueAsDate: true })}
             className={`rounded p-1 border-gray-400 border ${
               errors.birthdate ? "border-red-400" : ""

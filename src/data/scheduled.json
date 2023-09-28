@@ -10,7 +10,7 @@
     "id": 1
   },
   {
-    "name": "Jane doe",
+    "name": "Jane doe1",
     "doctor_name": "john doe",
     "scheduled_time": "08:00",
     "amount": 200,
@@ -20,7 +20,7 @@
     "id": 2
   },
   {
-    "name": "Jane doe",
+    "name": "Jane doe2",
     "doctor_name": "john doe",
     "scheduled_time": "08:00",
     "amount": 95,

@@ -42,14 +42,14 @@ export default function ToastContainer() {
       }
     >
       {messages.map((message) => (
-        <>
+        <div key={message.id}>
           <ToastMessage
             key={message.id}
             message={message}
             onRemoveMessage={handleRemoveMessage}
           />
           <div className="mt-3"></div>
-        </>
+        </div>
       ))}
     </div>
   );
