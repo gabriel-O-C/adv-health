@@ -2,7 +2,7 @@ function MenuNav() {
   return (
     <nav className="flex fixed z-20 bg-slate-300 w-full justify-between items-center p-4">
       <div>
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           Nome da clínica
         </a>
       </div>

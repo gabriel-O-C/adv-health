@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Jane doe",
+    "doctor_name": "john doe",
+    "scheduled_time": "08:00",
+    "amount": 150,
+    "cpf": "790.985.610-55",
+    "address": "rua do café, 164",
+    "birthdate": "04/11/1998",
+    "id": 1
+  },
+  {
+    "name": "Jane doe",
+    "doctor_name": "john doe",
+    "scheduled_time": "08:00",
+    "amount": 200,
+    "cpf": "790.985.610-55",
+    "address": "rua do café, 164",
+    "birthdate": "04/11/1998",
+    "id": 2
+  },
+  {
+    "name": "Jane doe",
+    "doctor_name": "john doe",
+    "scheduled_time": "08:00",
+    "amount": 95,
+    "cpf": "790.985.610-55",
+    "address": "rua do café, 164",
+    "birthdate": "04/11/1998",
+    "id": 3
+  }
+]

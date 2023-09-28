@@ -33,7 +33,7 @@ export function AppointmentForm({ isModalVisible, setIsModalVisible }: Props) {
       cpf: "",
       birthdate: new Date(),
       address: "",
-      amount: 0,
+      amount: 150,
     },
   });
   function handleCloseModal() {
