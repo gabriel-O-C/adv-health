@@ -24,6 +24,7 @@ export function AppointmentForm({ isModalVisible, setIsModalVisible }: Props) {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({
     resolver: zodResolver(appointmentSchema),
@@ -45,6 +46,7 @@ export function AppointmentForm({ isModalVisible, setIsModalVisible }: Props) {
       type: "success"
     })
     handleCloseModal();
+    reset();
   }
   return (
     <Modal

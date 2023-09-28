@@ -3,7 +3,6 @@ import { ToastData } from "../../types/toastData";
 import { toastManager } from "../../utils/toast";
 import { ToastMessage } from "./ToastMessage";
 
-
 export default function ToastContainer() {
   const [messages, setMessages] = useState<ToastData[]>([]);
 
@@ -35,13 +34,22 @@ export default function ToastContainer() {
   }, []);
 
   return (
-    <div className="fixed left-[50%] bottom-10 z-20 -translate-x-[50%]">
+    <div
+      className={
+        messages.length > 0
+          ? "fixed left-[50%] bottom-10 z-20 -translate-x-[50%] mt-3"
+          : "fixed left-[50%] bottom-10 z-20 -translate-x-[50%] mt-0"
+      }
+    >
       {messages.map((message) => (
-        <ToastMessage
-          key={message.id}
-          message={message}
-          onRemoveMessage={handleRemoveMessage}
-        />
+        <>
+          <ToastMessage
+            key={message.id}
+            message={message}
+            onRemoveMessage={handleRemoveMessage}
+          />
+          <div className="mt-3"></div>
+        </>
       ))}
     </div>
   );

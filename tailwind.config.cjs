@@ -5,13 +5,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        black_rgba: 'rgba(0, 0, 0, 0.6)'
+        black_rgba: "rgba(0, 0, 0, 0.6)",
       },
       screens: {
-        '3xl': '2000px',
+        "3xl": "2000px",
       },
     },
   },
   plugins: [],
-}
-
+};
